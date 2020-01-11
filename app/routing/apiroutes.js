@@ -34,15 +34,12 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
     // req.body is available since we're using the body parsing middleware
 
+
     var weebMatches = [];
     for (var i = 0; i < weebData.length; i++) {
       var points = 0;
-      for (var z = 0; z < weebData[i].weebScores; z++) {
+      for (var z = 0; z < weebData[i].weebScores.length; z++) {
         if (req.body.weebScores[z] == weebData[i].weebScores[z]) {
-            console.log(" ");
-            console.log("This is a compare");
-            console.log(weebData[i].weebScores[z]);
-            console.log(req.body.weebScores[z]);
           points++;
         }
       }
@@ -51,10 +48,11 @@ module.exports = function(app) {
     }
 
     weebMatches.sort(function(a, b) {
-      return a.friendPoints - b.friendPoints;
+      return b.friendPoints - a.friendPoints;
     });
 
-    weebMatches = weebMatches.slice(0,10);
+    weebMatches = weebMatches.slice(0, 10);
+    console.log(weebMatches);
 
     weebData.push(req.body);
     res.json(weebMatches);
