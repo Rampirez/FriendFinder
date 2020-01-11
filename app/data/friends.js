@@ -9,27 +9,99 @@ var defaultImage =
 var friendArray = [
   {
     weebName: "Naruto Uzimaki",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "2",
+        "1 (Strongly Disagree)",
+        "3",
+        "2",
+        "2",
+        "2",
+        "3",
+        "4",
+        "Sakura",
+        "Truck-kun"
+        ]
   },
   {
     weebName: "Sasuke Uchiha",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "4",
+        "1 (Strongly Disagree)",
+        "4",
+        "2",
+        "4",
+        "3",
+        "4",
+        "5 (Strongly Agree)",
+        "Sakura",
+        "Truck-kun"
+        ]
   },
   {
     weebName: "Sakura Haruno",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "3",
+        "1 (Strongly Disagree)",
+        "2",
+        "4",
+        "2",
+        "4",
+        "3",
+        "3",
+        "Sakura",
+        "Truck-kun"
+        ]
   },
   {
     weebName: "Hinata Hyuga",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "4",
+        "1 (Strongly Disagree)",
+        "4",
+        "4",
+        "4",
+        "4",
+        "4",
+        "4",
+        "Sakura",
+        "Truck-kun"
+        ]
   },
   {
     weebName: "Kakashi Hatake",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "2",
+        "1 (Strongly Disagree)",
+        "2",
+        "2",
+        "2",
+        "2",
+        "2",
+        "4",
+        "Sasuke",
+        "Truck-kun"
+        ]
   },
   {
     weebName: "Rock Lee",
-    weebProfileImage: defaultImage
+    weebProfileImage: defaultImage,
+    weebScores: [
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "5 (Strongly Agree)",
+        "Rock Lee",
+        "Truck-kun"
+        ]
   }
 ];
 
