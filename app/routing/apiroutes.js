@@ -39,18 +39,25 @@ module.exports = function(app) {
       var points = 0;
       for (var z = 0; z < weebData[i].weebScores; z++) {
         if (req.body.weebScores[z] == weebData[i].weebScores[z]) {
+            console.log(" ");
+            console.log("This is a compare");
+            console.log(weebData[i].weebScores[z]);
+            console.log(req.body.weebScores[z]);
           points++;
         }
       }
 
-      weebMatches.push({ Name: weebData[i].weebName, friendPoints: points });
+      weebMatches.push({ name: weebData[i].weebName, friendPoints: points });
     }
 
     weebMatches.sort(function(a, b) {
       return a.friendPoints - b.friendPoints;
     });
 
+    weebMatches = weebMatches.slice(0,10);
+
     weebData.push(req.body);
+    res.json(weebMatches);
   });
 
   // ---------------------------------------------------------------------------
