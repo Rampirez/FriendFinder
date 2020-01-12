@@ -159,7 +159,23 @@ var friendArray = [
       "Sasuke",
       "Society itself"
     ]
-  }
+  },
+  {
+    weebName: "Toki",
+    weebPhoto: "https://66.media.tumblr.com/ab40f0512740583547f05a5165a1e04a/tumblr_olpb9zJhss1ri11uwo2_250.png",
+    weebScores: [
+    "3",
+    "1 (Strongly Disagree)",
+    "2",
+    "5 (Strongly Agree)",
+    "1 (Strongly Disagree)",
+    "1 (Strongly Disagree)",
+    "1 (Strongly Disagree)",
+    "1 (Strongly Disagree)",
+    "Hinata",
+    "Society itself"
+    ]
+    }
 ];
 
 // Note how we export the array. This makes it accessible to other files using require.
