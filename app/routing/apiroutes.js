@@ -44,7 +44,7 @@ module.exports = function(app) {
         }
       }
 
-      weebMatches.push({ name: weebData[i].weebName, friendPoints: points });
+      weebMatches.push({ name: weebData[i].weebName, friendPoints: points, photo: weebData[i].weebProfileImage });
     }
 
     weebMatches.sort(function(a, b) {
@@ -52,7 +52,7 @@ module.exports = function(app) {
     });
 
     weebMatches = weebMatches.slice(0, 10);
-    console.log(weebMatches);
+    
 
     weebData.push(req.body);
     res.json(weebMatches);
