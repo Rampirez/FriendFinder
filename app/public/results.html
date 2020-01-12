@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WeebFinder Survey</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1>These are your top weeb friends!</h1>
+      <h2>Make sure to tell them hello!!!</h2>
+    </div>
+    <div class="text-center">
+      <div class="card w-100">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="friend1"><button></button></li>
+          <li class="list-group-item" id="friend2"></li>
+          <li class="list-group-item" id="friend3"></li>
+          <li class="list-group-item" id="friend4"></li>
+          <li class="list-group-item" id="friend5"></li>
+          <li class="list-group-item" id="friend6"></li>
+          <li class="list-group-item" id="friend7"></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var data = JSON.parse(localStorage.getItem("data"));
+      console.log(JSON.stringify(data));
+
+      $("#friend1").html(
+        "<img src='" +
+          data[0].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[0].name +
+          "<br><br>Friendship Level: " +
+          data[0].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend2").html(
+        "<img src='" +
+          data[1].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[1].name +
+          "<br><br>Friendship Level: " +
+          data[1].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend3").html(
+        "<img src='" +
+          data[2].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[2].name +
+          "<br><br>Friendship Level: " +
+          data[2].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend4").html(
+        "<img src='" +
+          data[3].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[3].name +
+          "<br><br>Friendship Level: " +
+          data[3].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend5").html(
+        "<img src='" +
+          data[4].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[4].name +
+          "<br><br>Friendship Level: " +
+          data[4].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend6").html(
+        "<img src='" +
+          data[5].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[5].name +
+          "<br><br>Friendship Level: " +
+          data[5].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+      $("#friend7").html(
+        "<img src='" +
+          data[6].photo +
+          "' class='animated infinite heartbeat slow'><br><h2>Name: " +
+          data[6].name +
+          "<br><br>Friendship Level: " +
+          data[6].friendPoints +
+          "</h2><br><button type='button' class='btn btn-primary animated infinite flash slow'><i class='fa fa-envelope'></i> Message them!</button>"
+      );
+    </script>
+  </body>
+</html>
